@@ -18,8 +18,8 @@ have is:
     require 'facebook-php-sdk/src/facebook.php';
 
     $facebook = new Facebook(array(
-      'appId'  => 'YOUR_APP_ID',
-      'secret' => 'YOUR_APP_SECRET',
+      'appId'  => '465974090119111',
+      'secret' => 'f20ecbe620d6e3fa9220afb53929e32f',
     ));
 
     // Get User ID
@@ -30,7 +30,7 @@ To make [API][API] calls:
     if ($user) {
       try {
         // Proceed knowing you have a logged in user who's authenticated.
-        $user_profile = $facebook->api('/me');
+        $user_profile = $facebook->api('/advocaciafamilia');
       } catch (FacebookApiException $e) {
         error_log($e);
         $user = null;
